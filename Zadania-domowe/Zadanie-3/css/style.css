@@ -1,0 +1,87 @@
+/* Begin of position references*/
+.global {
+    position: relative;
+}
+
+
+.square {
+    position: absolute; 
+    width: 9.3em;
+    height: 9.3em;
+}
+
+.col2 {
+    position:absolute;
+    left: 9.5em;
+    
+}
+
+
+.col3 {
+    position:absolute;
+    left: 19em;
+
+}
+
+
+.row2{
+    position: absolute;
+    top: 9.5em;
+}
+
+.row3{
+    position:absolute;
+    top: 19em;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 2.4em;
+    left: 2.4em;
+    z-index: 10;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}
+/* End of position references */
+
+/* Begin of color sets*/
+.red{
+    background-color: #ff0000
+}
+
+.blue {
+    background-color: #0000ff
+}
+
+.green {
+   background-color: #008d20
+}
+
+.yellow {
+    background-color: #f5ff00
+}
+
+.black {
+    background-color: #000
+}
+
+.violet {
+    background-color: #c300b4
+}
+
+.gray {
+    background-color: #6c6c6c
+}
+
+.orange {
+    background-color: #ff9300
+}
+
+.pink {
+    background-color: #ff9af4
+}
+/* End of color sets */
