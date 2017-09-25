@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Zadanie 2</title>
+    <title>Zadanie 2 - formularz</title>
 </head>
+
 <body>
-    <p>Zadanie 2</p>
+
+    <form action="https://formspree.io/pavv.dev@gmail.com" method="POST">
+        <label for="name">Imię</label>
+        <input type="text" id="name" name="name"> <br>
+
+        <label for="surname">Nazwisko</label>
+        <input type="text" id="surname" name="surname"> <br>
+
+        <label for="mail">Email</label>
+        <input type="text" id="mail" name="mail"> <br>
+
+        <label for="phone">Numer telefonu</label>
+        <input type="tel" id="phone" name="phone"> <br>
+
+        <select id="town" name="town">
+          <option value="Gdańsk">Gdańsk</option>
+          <option value="Kraków">Kraków</option>
+          <option value="Warszawa">Warszawa</option>
+        </select> <br>
+
+        <input type="radio" name="sex" id="male"><label for="male">Mężczyzna</label>
+        <input type="radio" name="sex" id="female"><label for="female">Kobieta</label> <br>
+
+        <input type="checkbox" id="consent" name="consent"><label for="consent">Zgoda na przetwarzanie danych osobowych</label> <br>
+
+        <label for="txtbox">Wiadomość</label> <br>
+        <textarea name="text_box" id="txtbox" cols="40" rows="5"></textarea> <br>
+
+        <input type="submit" value="Wyślij">
+    </form>
 </body>
+
 </html>
