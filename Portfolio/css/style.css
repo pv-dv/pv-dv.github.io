@@ -12,6 +12,9 @@ span {
     color: #1ac056;
 }
 
+figure{
+    margin: 0;
+}
 
 .clear{
     clear: both;
@@ -87,7 +90,7 @@ header>div{
 
 #subtitle {
     padding: 10px;
-    font-size: 1em;   
+    font-size: 2em;   
 }
 /* End of title*/
 /* End of header */
@@ -102,7 +105,8 @@ header>div{
 }
 
 
-#about-me-section>div>img {
+/*#about-me-section>div>img {*/
+#about-me-section>figure>img {
     width: 49%;
     height: auto;
     padding-right: 25%;
@@ -259,7 +263,7 @@ input[type="submit"]{
 }
 
 #footer-margin {
-    background-color: #2a2c50;
+    background-color: #957f08;
     height: 3vh;
     width: 100%;
     z-index: 10;
