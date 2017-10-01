@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!--    <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
+
+    <!--  Header & nav -->
+    <nav id="navigation">
+        <ul>
+            <li class="menu-item"><a href="#about">O mnie</a></li>
+            <li class="menu-item"><a href="#skills">Umiejętności</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header id="header-background">
+        <div>
+            <h1 id="header-title">Paweł <span>Zasada</span></h1>
+            <h2 id="subtitle">Full Stack Developer</h2>
+        </div>
+    </header>
+
+
+    <!--  Main content  -->
+    <!--  About -->
+    <section>
+        <h3 id="about" class="headers">O <span>mnie</span></h3>
+        <div id="about-me-section">
+            <div id="photo" class="floated">
+                <img src="img/jan-nowak.jpg" alt="janek" align="right">
+            </div>
+            <div id="about-txt" class="floated">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis earum commodi, id deserunt tenetur dolores voluptatem temporibus nemo, nam sint voluptates facilis soluta impedit in consequuntur officiis. Minima, sunt soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident delectus quibusdam quasi blanditiis praesentium, non esse cupiditate maiores. Provident delectus velit odit libero numquam soluta, debitis natus amet minima corporis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi asperiores odit aliquam dignissimos ipsa, praesentium ratione soluta deserunt, placeat vero nesciunt molestias animi voluptatum quia vitae hic sapiente ea excepturi.
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+
+    <!--  My skills  -->
+    <section>
+        <h3 id="skills" class="headers">Moje <span>umiejętności</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde beatae esse voluptatem sint optio voluptas harum aperiam aut, fuga in illo doloremque laboriosam a quos error sit ad magni tempore.</p>
+        <div id="icon-set">
+            <div class="icon">
+                <img src="icons/css3.png" alt="css3">
+                <figcaption>CSS3</figcaption>
+            </div>
+            <div class="icon">
+                <img src="icons/html5.png" alt="html">
+                <figcaption>HTML 5</figcaption>
+            </div>
+            <div class="icon">
+                <img src="icons/jquery.png" alt="jquery">
+                <figcaption>JQuery</figcaption>
+            </div>
+            <div class="icon">
+                <img src="icons/js.png" alt="js">
+                <figcaption>Javascript</figcaption>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  My portfolio  -->
+    <section>
+        <h3 id="portfolio" class="headers">Moje <span>portfolio</span></h3>
+        <div id="portfolio-set">
+            <div class="portfolio-tile">
+                <img src="img/portfolio1.jpg" alt="portfolio1">
+            </div>
+            <div class="portfolio-tile">
+                <img src="img/portfolio2.jpg" alt="portfolio2">
+            </div>
+            <div class="portfolio-tile">
+                <img src="img/portfolio3.jpg" alt="portfolio3">
+            </div>
+        </div>
+    </section>
+
+
+    <!--  Footer  -->
+    <footer id="contact">
+        <!--       Footer left-->
+        <div class="footer-sections left">
+            <p>Paweł <span>Zasada</span></p>
+            <address>
+               ul. Mostowa 6/7 <br>
+               31-061 Kraków <br>
+               <br>
+               
+               <tel>606777888</tel> <br>
+               <mail>
+               e-mail: <a href="mailto:pavv.dev@gmail.com">pavv.dev@gmail.com</a></mail>
+            </address>
+
+            <div id="footer-icons">
+                <div class="icon">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+        </div>
+
+        <!--        Footer right -->
+        <div class="footer-sections right">
+            <form action="" method="">
+                <input type="text" id="name" name="name" class="input" placeholder="Imię i nazwisko"> <br>
+
+                <input type="text" id="mail" name="mail" class="input" placeholder="E-mail"> <br>
+
+                <textarea name="text_box" id="txtbox" cols="40" rows="5" placeholder="Wiadomość"></textarea> <br>
+
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
+    </footer>
     
+    <!--       Footer margin -->
+    <div id="footer-margin" class="left">Copyright © Paweł Zasada </div>
+
+
 </body>
+
 </html>

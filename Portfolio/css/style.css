@@ -1,0 +1,259 @@
+/* Begin of Global Styles*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fcfe;
+}
+
+span {
+    color: #1ac056;
+}
+
+
+.clear{
+    clear: both;
+}
+
+section {
+    position: relative;
+}
+
+.headers {
+    padding: 20px;
+}
+
+
+
+/*---------------------*/
+/* Begin of header */
+/* Begin of menu */
+#navigation {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    text-align: right;
+    background-color: #fff;
+    
+}
+
+nav>ul, h1 {
+    margin: 0;
+}
+
+.menu-item {
+    padding: 20px;
+    display: inline-block; 
+    margin-left: 10px;
+}
+
+.menu-item>a{
+    color: #1ac056;
+    text-decoration: none;
+}
+/* End of menu */
+
+
+
+/*-------------------------*/
+/* Begin of title*/
+header {
+    height: 100vh;
+    position: relative;
+    color: #fff  
+}
+
+#header-background {
+    background-image: url('../img/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+header>div{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;   
+}
+
+#header-title{
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+#subtitle {
+    padding: 10px;
+    font-size: 1em;   
+}
+/* End of title*/
+/* End of header */
+
+
+
+
+
+/* Begin of about me*/
+#about-me-section {
+    height: 50vh;
+}
+
+
+#about-me-section>div>img {
+    width: 49%;
+    height: auto;
+    padding-right: 25%;
+}
+
+#about-txt {
+    text-align: left;
+}
+
+.floated {
+    width: 49%;
+    display: inline-block;
+    margin-right: 0.5%;
+    float: left;
+}
+/* End of about me*/
+
+
+
+
+
+
+/* Begin of skills */
+#icon-set {
+    height: 20vh;
+
+}
+.icon {
+    display: inline-block;
+    height: 25%;
+    padding: 20px;
+}
+/* End of skills */
+
+
+
+
+
+
+/* Begin of portfolio */
+#portfolio-set {
+    height: 50vh;
+}
+.portfolio-tile{
+    display: inline-block;
+    width: 40vh;
+    height: 40vh;
+/*    background-color: #00ad57;*/
+    
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.portfolio-tile>img{
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-tile:hover{
+    background-color: #9b6500; 
+}
+
+/* End of portfolio */
+
+
+
+
+/* Begin of footer */
+footer {
+    background-color: #213b50;
+/*    height: 50vh;*/
+}
+
+
+.footer-sections{
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.footer-sections>address {
+    font-style: normal;
+    color: #fff;
+}
+
+
+
+#footer-icons{
+    height: 25%;
+}
+
+
+.footer-sections>p {
+    color: #fff;
+    font-size: 2em;
+/*    padding-left: 30px;*/
+}
+
+address {
+/*    padding-left: 30px;*/
+}
+
+mail>a {
+    color: #1ac056;
+}
+
+form {
+    height: 100%;
+}
+
+input, textarea{
+    width: 94%;
+    height: 25px;
+}
+
+textarea {
+    height: 50px;
+    resize: vertical;
+}
+
+input, textarea {
+    border: none;
+    background-color: #2b4a64;
+    margin-bottom: 10px;
+    margin-top:5px;
+    padding: 5px 15px;
+}
+
+
+input[type="submit"]{
+    width: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1ac056;
+/*    line-height: 40px;*/
+    height: 40px;
+}
+
+
+#footer-margin {
+    background-color: #2a2c50;
+    height: 3vh;
+    width: 100%;
+    z-index: 10;
+    text-align: left;
+    padding-left: 30px;
+    color: #fff;
+    box-sizing: border-box;
+}
+/* End of footer */
