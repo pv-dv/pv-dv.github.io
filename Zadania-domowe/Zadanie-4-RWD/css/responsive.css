@@ -18,7 +18,7 @@
 
 
 /* Up to 1170 px*/
-@media screen and (max-device-width: 1170px) {
+@media screen and (max-width: 1170px) {
     #background {
         background-image: url('../img/man-2.jpg');
         height: 70vh;
@@ -36,7 +36,7 @@
 
 
 /* Up to 992px */
-@media screen and (max-device-width: 992px) {
+@media screen and (max-width: 992px) {
     #background {
         background-image: url('../img/man-1.jpg');
         height: 50vh;
