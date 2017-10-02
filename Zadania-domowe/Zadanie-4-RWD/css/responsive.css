@@ -1,4 +1,4 @@
-/* Global settings */
+/* Default settings - greater than 1170px */
 @media screen {
     #background {
         background-image: url('../img/man-1.jpg');
