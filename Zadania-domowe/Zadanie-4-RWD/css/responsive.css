@@ -1,0 +1,62 @@
+/* Global settings */
+@media screen {
+    #background {
+        background-image: url('../img/man-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        max-width: auto;
+    }
+    
+    #header-container {
+        top: 45%;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+/* Up to 1170 px*/
+@media screen and (max-device-width: 1170px) {
+    #background {
+        background-image: url('../img/man-2.jpg');
+        height: 70vh;
+        width: auto;
+    }
+    
+    #header-container {
+        top: 5%;
+        right: 0;
+        position: absolute;
+        width: 50%;
+       
+    }
+}
+
+
+/* Up to 992px */
+@media screen and (max-device-width: 992px) {
+    #background {
+        background-image: url('../img/man-1.jpg');
+        height: 50vh;
+        width: auto;
+    }
+    
+    #header-container {
+        position: relative;
+        top: 0;
+        width: 100%;
+       
+    }
+    
+    .headings {
+        color: #000;
+        text-align: center;
+        padding: 1%;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+    } 
+}
