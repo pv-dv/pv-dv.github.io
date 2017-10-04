@@ -1,0 +1,14 @@
+/* Large displays */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 49%;
+    }
+}
+
+
+/* Small displays */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }   
+}
