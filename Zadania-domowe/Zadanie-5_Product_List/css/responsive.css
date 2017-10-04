@@ -1,5 +1,6 @@
 /* Large displays */
 @media screen and (max-width: 992px) {
+    
     .container {
         width: 49%;
     }
