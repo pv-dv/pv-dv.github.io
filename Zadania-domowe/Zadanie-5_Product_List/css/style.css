@@ -45,7 +45,6 @@ body{
 /* Container background styles */
 .background1{
     background-image: url(../img/product-1.jpg);
-    z-index: 10;
 }
 
 .background2{
@@ -67,12 +66,17 @@ body{
     position: absolute;
     top: 40%;
     left: 40%;
-    
+    opacity: 0;
+    transition-duration: 0.5s;
 }
 
 
 /* Transition effects */
 .bottom:hover{
     opacity: 0.7;
+}
+
+.bottom:hover .fa {
+    opacity: 1;
 }
 
