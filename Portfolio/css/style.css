@@ -44,9 +44,18 @@ section {
     
 }
 
-nav>ul, h1 {
+nav> ul, h1 {
     margin: 0;
 }
+
+#responsive-menu{
+   display: none;
+}
+
+nav>label[for="responsive-menu"]{
+   display: none;
+}
+
 
 .menu-item {
     padding: 20px;
@@ -58,19 +67,22 @@ nav>ul, h1 {
     color: #1ac056;
     text-decoration: none;
 }
+
+#responsive-menu{
+    display: none;
+}
+
 /* End of menu */
 
 
 
 /*-------------------------*/
 /* Begin of title*/
-header {
+#header-background {
     height: 100vh;
     position: relative;
-    color: #fff  
-}
-
-#header-background {
+    color: #fff ; 
+        
     background-image: url('../img/header-background.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -183,6 +195,14 @@ header div{
     transform: translateY(-50%);
 }
 
+#portfolio-set .portfolio-tile .mask .mask-box .mask-content .portfolio-link {
+    color: #fff;
+}
+
+#portfolio-set .portfolio-tile .mask .mask-box .mask-content .portfolio-link:hover {
+    color: #1ac056;
+}
+
 #portfolio-set .portfolio-tile .mask:hover{
     opacity: 1;
 }
@@ -213,6 +233,7 @@ footer {
     background-color: #213b50;
     overflow: hidden;
     padding-bottom: 30px;
+    position: relative;
 }
 .footer-sections{
     text-align: left;
@@ -232,9 +253,7 @@ footer {
     font-style: normal;
     color: #fff;
 }
-#footer-icons{
-    height: 25%;
-}
+
 .footer-sections>p {
     color: #fff;
     font-size: 2em;
@@ -242,28 +261,36 @@ footer {
 mail>a {
     color: #1ac056;
 }
+
+#footer-icon-set{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 .social-icon{
     display: inline-block;
-    padding: 5px;
-    margin-top: 10px;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
     margin-right: 10px;
 }
-.social-icon .fa{
+
+.social-icon > a {
+    line-height: 50px;
     color: #fff;
-    font-size: 2em;
 }
+
 
 .social-icon .fa:hover{
     color: #1ac056;
 }
 
-
-
 /* Right form section */
 form {
     height: 100%;
     padding-top: 5%;
-/*    position: absolute;*/
 }
 input, textarea{
     width: 100%;
@@ -291,14 +318,19 @@ input[type="submit"]{
 /*    lub inline-block i text-align right*/
 }
 
-#footer-margin {
+input[type="submit"]:hover{
+    color: #1ac056;
+    background-color: #fff;
+}
+
+#footer-bottom-margin {
     background-color: #1ac056;
-    height: 3vh;
     width: 100%;
-    z-index: 10;
     text-align: left;
     padding-left: 30px;
     color: #fff;
     font-weight: 300;
+    position: absolute;
+    bottom: 0;
 }
 /* End of footer */

@@ -1,20 +1,41 @@
-
 @media (max-width: 992px) {
     .columns {
         width: 100%;
     }
-    
     #about-txt {
         padding-top: 30px;
     }
-    
-    #portfolio-set > #background1,
-    #portfolio-set > #background2{
+    #portfolio-set>#background1,
+    #portfolio-set>#background2 {
         width: 49%
     }
-    
-    #portfolio-set > #background3 {
+    #portfolio-set>#background3 {
         width: 98%;
+    }
+}
+
+
+/*     Icon menu */
+@media (max-width: 530px) {
+    #navigation label[for="responsive-menu"] {
+        color: #1ac056;
+        font-size: 2em;
+        padding: 10px;
+    }
+    nav>label[for="responsive-menu"] {
+        display: block;
+    }
+    .menu-item {
+        display: block;
+        margin-left: 10px;
+    }
+    
+    #navigation ul{
+        display: none;
+    }
+    
+    #navigation #responsive-menu:checked + ul{
+        display: block;
     }
     
 }
