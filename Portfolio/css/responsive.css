@@ -1,0 +1,20 @@
+
+@media (max-width: 992px) {
+    .columns {
+        width: 100%;
+    }
+    
+    #about-txt {
+        padding-top: 30px;
+    }
+    
+    #portfolio-set > #background1,
+    #portfolio-set > #background2{
+        width: 49%
+    }
+    
+    #portfolio-set > #background3 {
+        width: 98%;
+    }
+    
+}
