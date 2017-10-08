@@ -31,6 +31,12 @@ section {
     font-weight: 300;
 }
 
+.columns {
+    float: left;
+    width: 50%;
+}
+
+
 
 /*---------------------*/
 /* Begin of header */
@@ -63,10 +69,16 @@ nav>label[for="responsive-menu"]{
     margin-left: 10px;
 }
 
-.menu-item>a{
+.menu-item a{
     color: #1ac056;
     text-decoration: none;
 }
+
+#navigation ul .menu-item:hover a{
+    transform: scale(1.2);
+    color: red;
+}
+
 
 #responsive-menu{
     display: none;
@@ -140,6 +152,10 @@ header div{
     height: 25%;
     padding: 20px;
 }
+
+.icon:hover {
+    transform: scale(1.2);
+}
 /* End of skills */
 
 
@@ -203,6 +219,10 @@ header div{
     color: #1ac056;
 }
 
+#portfolio-set .portfolio-tile .mask .mask-box .mask-content .portfolio-link:hover .fa{
+    transform: scale(1.2);
+}    
+
 #portfolio-set .portfolio-tile .mask:hover{
     opacity: 1;
 }
@@ -241,10 +261,12 @@ footer {
     padding-left: 30px;
     font-weight: 300;
 }
+/*
 .columns {
     float: left;
     width: 50%;
 }
+*/
 
 
 
@@ -282,10 +304,12 @@ mail>a {
     color: #fff;
 }
 
-
 .social-icon .fa:hover{
     color: #1ac056;
+    transform: scale(1.2);
+    
 }
+
 
 /* Right form section */
 form {

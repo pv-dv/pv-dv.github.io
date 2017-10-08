@@ -4,13 +4,11 @@
     }
     #about-txt {
         padding-top: 30px;
+        text-align: center;
     }
-    #portfolio-set>#background1,
-    #portfolio-set>#background2 {
-        width: 49%
-    }
-    #portfolio-set>#background3 {
-        width: 98%;
+     
+    #portfolio-set .portfolio-tile{
+        width: 99%;
     }
 }
 
