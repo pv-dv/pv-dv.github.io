@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background-color: #000;
+    text-align: center;
+}
+
+#container{
+    width: 400px;
+    height: 100px;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.countdown-elements{
+    font-size: 100px;
+    color: #fff;
+    
+    animation-name: countdown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+#heart i{
+    color: red;
+}
+
+.ten{
+    animation-delay: 1s;
+}
+.nine{
+    animation-delay: 2s;
+}
+.eight{
+    animation-delay: 3s;
+}
+.seven{
+    animation-delay: 4s;
+}
+.six{
+    animation-delay: 5s;
+}
+.five{
+    animation-delay: 6s;
+}
+.four{
+    animation-delay: 7s;
+}
+.three{
+    animation-delay: 8s;
+}
+.two{
+    animation-delay: 9s;
+}
+.one{
+    animation-delay: 10s;
+}
+.love{
+    animation-delay: 11s;
+    animation-name: final-countdown;
+    animation-fill-mode: forwards;
+}
+
+@keyframes countdown {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes final-countdown {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
