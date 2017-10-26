@@ -48,8 +48,6 @@ function getData(event){
                         
                         var jsonObject = JSON.parse(response);
                 
-                        var container = document.createElement("div");
-                
                         var userName = document.createElement("p");
                         userName.innerText = "Name: " + jsonObject.imie;
                 
@@ -62,11 +60,11 @@ function getData(event){
                         var company = document.createElement("p");
                         company.innerText = "Company: " + jsonObject.firma;
                         
-                        container.appendChild(userName);
-                        container.appendChild(userProf);
-                        container.appendChild(userSurname);
-                        container.appendChild(company);
-                        document.body.appendChild(container);
+                        document.getElementById("dev-data").appendChild(userName);
+                        document.getElementById("dev-data").appendChild(userProf);
+                        document.getElementById("dev-data").appendChild(userSurname);
+                        document.getElementById("dev-data").appendChild(company);
+//                        document.body.appendChild(container);
                     
             }
     });  
