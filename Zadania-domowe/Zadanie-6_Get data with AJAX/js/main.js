@@ -47,6 +47,13 @@ function getData(event){
             onSuccess:  function(response) {
                         
                         var jsonObject = JSON.parse(response);
+                                            
+                        if(document.getElementById("dev-data") == null){
+                            var container = document.createElement("div");
+                            container.id = "dev-data";
+                            
+                            document.body.insertBefore(container, document.getElementById("btn").nextSibling)
+                        }
                 
                         var userName = document.createElement("p");
                         userName.innerText = "Name: " + jsonObject.imie;
@@ -64,8 +71,6 @@ function getData(event){
                         document.getElementById("dev-data").appendChild(userProf);
                         document.getElementById("dev-data").appendChild(userSurname);
                         document.getElementById("dev-data").appendChild(company);
-//                        document.body.appendChild(container);
-                    
             }
     });  
 };
