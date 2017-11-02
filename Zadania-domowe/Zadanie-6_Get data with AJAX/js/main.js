@@ -46,31 +46,32 @@ function getData(event){
             onError:    function () {console.log("Could not establish connection")},
             onSuccess:  function(response) {
                         
-                        var jsonObject = JSON.parse(response);
-                                            
-                        if(document.getElementById("dev-data") == null){
-                            var container = document.createElement("div");
-                            container.id = "dev-data";
-                            
-                            document.body.insertBefore(container, document.getElementById("btn").nextSibling)
-                        }
-                 
-                        var userName = document.createElement("p");
-                        userName.innerText = "Name: " + jsonObject.imie;
                 
-                        var userProf = document.createElement("p");
-                        userProf.innerText = "Profession: " + jsonObject.zawod;
-
-                        var userSurname = document.createElement("p");
-                        userSurname.innerText = "Surname: " + jsonObject.nazwisko;
-                
-                        var company = document.createElement("p");
-                        company.innerText = "Company: " + jsonObject.firma;
-                        
-                        document.getElementById("dev-data").appendChild(userName);
-                        document.getElementById("dev-data").appendChild(userProf);
-                        document.getElementById("dev-data").appendChild(userSurname);
-                        document.getElementById("dev-data").appendChild(company);
+//                        var jsonObject = JSON.parse(response);
+//                                            
+//                        if(document.getElementById("dev-data") == null){
+//                            var container = document.createElement("div");
+//                            container.id = "dev-data";
+//                            
+//                            document.body.insertBefore(container, document.getElementById("btn").nextSibling)
+//                        }
+//                 
+//                        var userName = document.createElement("p");
+//                        userName.innerText = "Name: " + jsonObject.imie;
+//                
+//                        var userProf = document.createElement("p");
+//                        userProf.innerText = "Profession: " + jsonObject.zawod;
+//
+//                        var userSurname = document.createElement("p");
+//                        userSurname.innerText = "Surname: " + jsonObject.nazwisko;
+//                
+//                        var company = document.createElement("p");
+//                        company.innerText = "Company: " + jsonObject.firma;
+//                        
+//                        document.getElementById("dev-data").appendChild(userName);
+//                        document.getElementById("dev-data").appendChild(userProf);
+//                        document.getElementById("dev-data").appendChild(userSurname);
+//                        document.getElementById("dev-data").appendChild(company);
             }
     });  
 };
